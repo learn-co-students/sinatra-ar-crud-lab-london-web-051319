@@ -1,0 +1,7 @@
+<h1><%= @article.title %></h1>
+<h1><%= @article.content %></h1>
+<a href="/articles">Go back to the main menu</a>
+<form action="/articles/<%= @article.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="Delete this article">
+</form>
